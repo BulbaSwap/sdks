@@ -1,4 +1,4 @@
-import { MaxUint256 } from '@uniswap/sdk-core'
+import { MaxUint256 } from '@ququzone/sdk-core'
 import JSBI from 'jsbi'
 import invariant from 'tiny-invariant'
 import { ONE, ZERO, Q96 } from '../internalConstants'
@@ -20,7 +20,7 @@ export abstract class SqrtPriceMath {
   /**
    * Cannot be constructed.
    */
-  private constructor() {}
+  private constructor() { }
 
   public static getAmount0Delta(sqrtRatioAX96: JSBI, sqrtRatioBX96: JSBI, liquidity: JSBI, roundUp: boolean): JSBI {
     if (JSBI.greaterThan(sqrtRatioAX96, sqrtRatioBX96)) {

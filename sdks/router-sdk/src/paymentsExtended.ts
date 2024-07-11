@@ -1,7 +1,7 @@
 import { Interface } from '@ethersproject/abi'
-import { Percent, Token, validateAndParseAddress } from '@uniswap/sdk-core'
+import { Percent, Token, validateAndParseAddress } from '@ququzone/sdk-core'
 import { abi } from '@uniswap/swap-router-contracts/artifacts/contracts/interfaces/IPeripheryPaymentsWithFeeExtended.sol/IPeripheryPaymentsWithFeeExtended.json'
-import { FeeOptions, Payments, toHex } from '@uniswap/v3-sdk'
+import { FeeOptions, Payments, toHex } from '@ququzone/v3-sdk'
 import JSBI from 'jsbi'
 
 function encodeFeeBips(fee: Percent): string {
@@ -14,7 +14,7 @@ export abstract class PaymentsExtended {
   /**
    * Cannot be constructed.
    */
-  private constructor() {}
+  private constructor() { }
 
   public static encodeUnwrapWETH9(amountMinimum: JSBI, recipient?: string, feeOptions?: FeeOptions): string {
     // if there's a recipient, just pass it along

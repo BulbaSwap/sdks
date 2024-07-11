@@ -1,5 +1,5 @@
 import { Interface } from '@ethersproject/abi'
-import { BigintIsh, Currency, CurrencyAmount, Percent, TradeType, validateAndParseAddress } from '@uniswap/sdk-core'
+import { BigintIsh, Currency, CurrencyAmount, Percent, TradeType, validateAndParseAddress } from '@ququzone/sdk-core'
 import invariant from 'tiny-invariant'
 import { Trade } from './entities/trade'
 import { ADDRESS_ZERO } from './constants'
@@ -54,7 +54,7 @@ export abstract class SwapRouter {
   /**
    * Cannot be constructed.
    */
-  private constructor() {}
+  private constructor() { }
 
   /**
    * Produces the on-chain method name to call and the hex encoded parameters to pass as arguments for a given trade.

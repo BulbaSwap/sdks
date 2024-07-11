@@ -1,4 +1,4 @@
-import { MaxUint256 } from '@uniswap/sdk-core'
+import { MaxUint256 } from '@ququzone/sdk-core'
 import JSBI from 'jsbi'
 import invariant from 'tiny-invariant'
 import { ONE, ZERO } from '../internalConstants'
@@ -14,7 +14,7 @@ export abstract class TickMath {
   /**
    * Cannot be constructed.
    */
-  private constructor() {}
+  private constructor() { }
 
   /**
    * The minimum tick that can be used on any pool.
@@ -82,7 +82,7 @@ export abstract class TickMath {
   public static getTickAtSqrtRatio(sqrtRatioX96: JSBI): number {
     invariant(
       JSBI.greaterThanOrEqual(sqrtRatioX96, TickMath.MIN_SQRT_RATIO) &&
-        JSBI.lessThan(sqrtRatioX96, TickMath.MAX_SQRT_RATIO),
+      JSBI.lessThan(sqrtRatioX96, TickMath.MAX_SQRT_RATIO),
       'SQRT_RATIO'
     )
 
@@ -124,7 +124,7 @@ export abstract class TickMath {
     return tickLow === tickHigh
       ? tickLow
       : JSBI.lessThanOrEqual(TickMath.getSqrtRatioAtTick(tickHigh), sqrtRatioX96)
-      ? tickHigh
-      : tickLow
+        ? tickHigh
+        : tickLow
   }
 }

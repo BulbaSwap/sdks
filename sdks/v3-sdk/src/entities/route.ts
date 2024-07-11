@@ -1,6 +1,6 @@
 import invariant from 'tiny-invariant'
 
-import { Currency, Price, Token } from '@uniswap/sdk-core'
+import { Currency, Price, Token } from '@ququzone/sdk-core'
 import { Pool } from './pool'
 
 /**
@@ -65,23 +65,23 @@ export class Route<TInput extends Currency, TOutput extends Currency> {
       ({ nextInput, price }, pool) => {
         return nextInput.equals(pool.token0)
           ? {
-              nextInput: pool.token1,
-              price: price.multiply(pool.token0Price),
-            }
+            nextInput: pool.token1,
+            price: price.multiply(pool.token0Price),
+          }
           : {
-              nextInput: pool.token0,
-              price: price.multiply(pool.token1Price),
-            }
+            nextInput: pool.token0,
+            price: price.multiply(pool.token1Price),
+          }
       },
       this.pools[0].token0.equals(this.input.wrapped)
         ? {
-            nextInput: this.pools[0].token1,
-            price: this.pools[0].token0Price,
-          }
+          nextInput: this.pools[0].token1,
+          price: this.pools[0].token0Price,
+        }
         : {
-            nextInput: this.pools[0].token0,
-            price: this.pools[0].token1Price,
-          }
+          nextInput: this.pools[0].token0,
+          price: this.pools[0].token1Price,
+        }
     ).price
 
     return (this._midPrice = new Price(this.input, this.output, price.denominator, price.numerator))

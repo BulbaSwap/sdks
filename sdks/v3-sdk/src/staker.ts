@@ -1,4 +1,4 @@
-import { BigintIsh, Token, validateAndParseAddress } from '@uniswap/sdk-core'
+import { BigintIsh, Token, validateAndParseAddress } from '@ququzone/sdk-core'
 import { MethodParameters, toHex } from './utils/calldata'
 import { defaultAbiCoder, Interface } from '@ethersproject/abi'
 import IUniswapV3Staker from '@uniswap/v3-staker/artifacts/contracts/UniswapV3Staker.sol/UniswapV3Staker.json'
@@ -69,7 +69,7 @@ export interface WithdrawOptions {
 export abstract class Staker {
   public static INTERFACE: Interface = new Interface(IUniswapV3Staker.abi)
 
-  protected constructor() {}
+  protected constructor() { }
   private static INCENTIVE_KEY_ABI =
     'tuple(address rewardToken, address pool, uint256 startTime, uint256 endTime, address refundee)'
 

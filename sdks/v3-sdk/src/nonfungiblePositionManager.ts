@@ -6,7 +6,7 @@ import {
   validateAndParseAddress,
   Currency,
   NativeCurrency,
-} from '@uniswap/sdk-core'
+} from '@ququzone/sdk-core'
 import JSBI from 'jsbi'
 import invariant from 'tiny-invariant'
 import { Position } from './entities/position'
@@ -178,7 +178,7 @@ export abstract class NonfungiblePositionManager {
   /**
    * Cannot be constructed.
    */
-  private constructor() {}
+  private constructor() { }
 
   private static encodeCreate(pool: Pool): string {
     return NonfungiblePositionManager.INTERFACE.encodeFunctionData('createAndInitializePoolIfNecessary', [

@@ -1,4 +1,4 @@
-import { BigintIsh, Token } from '@uniswap/sdk-core'
+import { BigintIsh, Token } from '@ququzone/sdk-core'
 import { Interface } from '@ethersproject/abi'
 import ISelfPermit from '@uniswap/v3-periphery/artifacts/contracts/interfaces/ISelfPermit.sol/ISelfPermit.json'
 import { toHex } from './utils'
@@ -31,25 +31,25 @@ export abstract class SelfPermit {
   /**
    * Cannot be constructed.
    */
-  private constructor() {}
+  private constructor() { }
 
   public static encodePermit(token: Token, options: PermitOptions) {
     return isAllowedPermit(options)
       ? SelfPermit.INTERFACE.encodeFunctionData('selfPermitAllowed', [
-          token.address,
-          toHex(options.nonce),
-          toHex(options.expiry),
-          options.v,
-          options.r,
-          options.s,
-        ])
+        token.address,
+        toHex(options.nonce),
+        toHex(options.expiry),
+        options.v,
+        options.r,
+        options.s,
+      ])
       : SelfPermit.INTERFACE.encodeFunctionData('selfPermit', [
-          token.address,
-          toHex(options.amount),
-          toHex(options.deadline),
-          options.v,
-          options.r,
-          options.s,
-        ])
+        token.address,
+        toHex(options.amount),
+        toHex(options.deadline),
+        options.v,
+        options.r,
+        options.s,
+      ])
   }
 }
