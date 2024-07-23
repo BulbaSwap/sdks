@@ -1,6 +1,6 @@
 {
   "name": "@bulbaswap/v2-sdk",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "🛠 An SDK for building applications on top of Bulbaswap V2",
   "repository": "https://github.com/BulbaSwap/sdks.git",
   "keywords": [
@@ -25,7 +25,7 @@
     "test": "tsdx test"
   },
   "dependencies": {
-    "@bulbaswap/sdk-core": "^1.0.6",
+    "@bulbaswap/sdk-core": "^1.0.7",
     "@ethersproject/address": "^5.0.2",
     "@ethersproject/bignumber": "^5.7.0",
     "@ethersproject/solidity": "^5.0.9",
