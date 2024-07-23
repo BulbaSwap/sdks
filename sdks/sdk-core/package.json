@@ -1,8 +1,8 @@
 {
   "name": "@bulbaswap/sdk-core",
   "version": "1.0.7",
-  "description": "⚒️ An SDK for building applications on top of Uniswap V3",
-  "repository": "https://github.com/Uniswap/sdks.git",
+  "description": "⚒️ An SDK for building applications on top of Bulbaswap V3",
+  "repository": "https://github.com/BulbaSwap/sdks.git",
   "keywords": [
     "Bulbaswap",
     "ethereum"
@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "@ethersproject/address": "^5.0.2",
+    "@ethersproject/bignumber": "^5.7.0",
     "@ethersproject/bytes": "^5.7.0",
     "@ethersproject/keccak256": "5.7.0",
     "@ethersproject/strings": "5.7.0",
