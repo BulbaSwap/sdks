@@ -1,6 +1,6 @@
 {
   "name": "@bulbaswap/universal-router-sdk",
-  "version": "1.0.2",
+  "version": "1.0.8",
   "description": "sdk for integrating with the Universal Router contracts",
   "repository": "https://github.com/BulbaSwap/sdks.git",
   "keywords": [
@@ -31,10 +31,10 @@
     "test:hardhat": "env TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\" }' hardhat test"
   },
   "dependencies": {
-    "@bulbaswap/router-sdk": "^1.0.1",
+    "@bulbaswap/router-sdk": "^1.0.2",
     "@bulbaswap/sdk-core": "^1.0.7",
-    "@bulbaswap/v2-sdk": "^1.0.2",
-    "@bulbaswap/v3-sdk": "^1.0.1",
+    "@bulbaswap/v2-sdk": "^1.0.3",
+    "@bulbaswap/v3-sdk": "^1.0.3",
     "@uniswap/permit2-sdk": "^1.3.0",
     "@uniswap/universal-router": "1.6.0",
     "bignumber.js": "^9.0.2",
