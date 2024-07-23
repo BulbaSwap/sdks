@@ -1,5 +1,5 @@
 # universal-router-sdk
-This SDK facilitates interactions with the contracts in [Universal Router](https://github.com/Uniswap/universal-router)
+This SDK facilitates interactions with the contracts in [Universal Router](https://github.com/BulbaSwap/universal-router)
 
 ## Usage
 Install latest version of universal-router-sdk. Then import the corresponding Trade class and Data object for each protocol you'd like to interact with.
@@ -12,7 +12,7 @@ import {
   LooksRareData,
   SeaportTrade,
   SeaportData
-} from "@uniswap/universal-router-sdk";
+} from "@bulbaswap/universal-router-sdk";
 
 // Each protocol data object contains 1 call to that protocol. Some protocols can fit
 // many NFT purchase within 1 call, like seaport. Others require multiple calls per NFT (like LooksRare).
@@ -24,13 +24,13 @@ const seaportTrades = new SeaportTrade([seaportData1])
 const { calldata, value } = SwapRouter.swapCallParameters([looksRareTrades, seaportTrades])
 ```
 
-### Trading ERC20s on Uniswap
+### Trading ERC20s on Bulbaswap
 warning: `swapERC20CallParameters()` to be deprecated in favor of `swapCallParameters()`
 ```typescript
-import { TradeType } from '@uniswap/sdk-core'
-import { Trade as V2TradeSDK } from '@uniswap/v2-sdk'
-import { Trade as V3TradeSDK } from '@uniswap/v3-sdk'
-import { MixedRouteTrade, MixedRouteSDK, Trade as RouterTrade } from '@uniswap/router-sdk'
+import { TradeType } from '@bulbaswap/sdk-core'
+import { Trade as V2TradeSDK } from '@bulbaswap/v2-sdk'
+import { Trade as V3TradeSDK } from '@bulbaswap/v3-sdk'
+import { MixedRouteTrade, MixedRouteSDK, Trade as RouterTrade } from '@bulbaswap/router-sdk'
 
 const options = { slippageTolerance, recipient }
 const routerTrade = new UniswapTrade(
@@ -41,15 +41,15 @@ const routerTrade = new UniswapTrade(
 const { calldata, value } = SwapRouter.swapCallParameters(routerTrade)
 ```
 
-### Using Uniswap for ERC20 NFT Trades
-Send ETH to the router by trading an ERC20 for ETH with a Uniswap Trade and encoding the swap recipient as `ROUTER_AS_RECIPIENT` in the trade. Then subsequently list the NFT trades to use the ETH output to buy NFTs. Trades happen in the order they are listed.
+### Using Bulbaswap for ERC20 NFT Trades
+Send ETH to the router by trading an ERC20 for ETH with a Bulbaswap Trade and encoding the swap recipient as `ROUTER_AS_RECIPIENT` in the trade. Then subsequently list the NFT trades to use the ETH output to buy NFTs. Trades happen in the order they are listed.
 
 Use `trade_type: TradeType.EXACT_OUTPUT` to cover the entire NFT price, alternatively the transaction will send supplemental ETH to fulfill the entire price if the swap does not cover it in full. Keep in mind that `TradeType.EXACT_INPUT` trades are subject to slippage on output, and ETH will be sent to cover potential slippage and any remaining ETH will be returned to sender.
 ```typescript
-import { TradeType } from '@uniswap/sdk-core'
-import { Trade as V2TradeSDK } from '@uniswap/v2-sdk'
-import { Trade as V3TradeSDK } from '@uniswap/v3-sdk'
-import { MixedRouteTrade, MixedRouteSDK, Trade as RouterTrade } from '@uniswap/router-sdk'
+import { TradeType } from '@bulbaswap/sdk-core'
+import { Trade as V2TradeSDK } from '@bulbaswap/v2-sdk'
+import { Trade as V3TradeSDK } from '@bulbaswap/v3-sdk'
+import { MixedRouteTrade, MixedRouteSDK, Trade as RouterTrade } from '@bulbaswap/router-sdk'
 import {
   ROUTER_AS_RECIPIENT,
   UniswapTrade,
@@ -57,7 +57,7 @@ import {
   LooksRareData,
   SeaportTrade,
   SeaportData
-} from "@uniswap/universal-router-sdk";
+} from "@bulbaswap/universal-router-sdk";
 
 const looksRareTrades = new LooksRareTrade([looksrareData1, looksrareData2])
 const seaportTrades = new SeaportTrade([seaportData1])
@@ -71,7 +71,7 @@ const { calldata, value } = SwapRouter.swapCallParameters([uniswapTrade, seaport
 ```
 
 ### Using WETH for NFT Trades
-The current router purchases all NFTs with ETH, but you can send WETH to the router to be unwrapped for ETH right before the NFT commands. Similar to ERC20 Uniswap Trades for NFTs, supplemental ETH will be sent in the transaction if the WETH amount will not cover the NFT buys. You can also use ERC20s and WETH to cover the transaction by including both commands before the NFT purchase.
+The current router purchases all NFTs with ETH, but you can send WETH to the router to be unwrapped for ETH right before the NFT commands. Similar to ERC20 Bulbaswap Trades for NFTs, supplemental ETH will be sent in the transaction if the WETH amount will not cover the NFT buys. You can also use ERC20s and WETH to cover the transaction by including both commands before the NFT purchase.
 
 ```typescript
 import {
@@ -81,7 +81,7 @@ import {
   LooksRareData,
   SeaportTrade,
   SeaportData
-} from "@uniswap/universal-router-sdk";
+} from "@bulbaswap/universal-router-sdk";
 
 const looksRareTrades = new LooksRareTrade([looksrareData1, looksrareData2])
 const seaportTrades = new SeaportTrade([seaportData1])

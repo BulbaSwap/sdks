@@ -1,4 +1,4 @@
-import { ChainId } from '@ququzone/sdk-core'
+import { ChainId } from '@bulbaswap/sdk-core'
 
 export const FACTORY_ADDRESS = '0x1F98431c8aD98523631AE4a59f267346ea31F984'
 

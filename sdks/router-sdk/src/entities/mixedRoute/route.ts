@@ -1,8 +1,8 @@
 import invariant from 'tiny-invariant'
 
-import { Currency, Price, Token } from '@ququzone/sdk-core'
-import { Pool } from '@ququzone/v3-sdk'
-import { Pair } from '@ququzone/v2-sdk'
+import { Currency, Price, Token } from '@bulbaswap/sdk-core'
+import { Pool } from '@bulbaswap/v3-sdk'
+import { Pair } from '@bulbaswap/v2-sdk'
 
 type TPool = Pair | Pool
 

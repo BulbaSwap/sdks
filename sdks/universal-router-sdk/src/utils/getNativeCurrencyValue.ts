@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, Ether } from '@ququzone/sdk-core'
+import { Currency, CurrencyAmount, Ether } from '@bulbaswap/sdk-core'
 
 export function getNativeCurrencyValue(currencyValues: CurrencyAmount<Currency>[]): CurrencyAmount<Currency> {
   for (const value of currencyValues) {

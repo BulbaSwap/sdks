@@ -1,7 +1,7 @@
 import { pack } from '@ethersproject/solidity'
-import { Currency, Token } from '@ququzone/sdk-core'
-import { Pool } from '@ququzone/v3-sdk'
-import { Pair } from '@ququzone/v2-sdk'
+import { Currency, Token } from '@bulbaswap/sdk-core'
+import { Pool } from '@bulbaswap/v3-sdk'
+import { Pair } from '@bulbaswap/v2-sdk'
 import { MixedRouteSDK } from '../entities/mixedRoute/route'
 import { V2_FEE_PATH_PLACEHOLDER } from '../constants'
 

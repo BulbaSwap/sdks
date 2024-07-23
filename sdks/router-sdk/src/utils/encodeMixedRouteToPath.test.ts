@@ -1,6 +1,6 @@
-import { CurrencyAmount, Ether, Token, WETH9 } from '@ququzone/sdk-core'
-import { Pair } from '@ququzone/v2-sdk'
-import { encodeSqrtRatioX96, FeeAmount, Pool } from '@ququzone/v3-sdk'
+import { CurrencyAmount, Ether, Token, WETH9 } from '@bulbaswap/sdk-core'
+import { Pair } from '@bulbaswap/v2-sdk'
+import { encodeSqrtRatioX96, FeeAmount, Pool } from '@bulbaswap/v3-sdk'
 import { MixedRouteSDK } from '../entities/mixedRoute/route'
 import { encodeMixedRouteToPath } from './encodeMixedRouteToPath'
 

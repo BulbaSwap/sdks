@@ -1,5 +1,5 @@
 import invariant from 'tiny-invariant'
-import { Currency, Price, Token } from '@ququzone/sdk-core'
+import { Currency, Price, Token } from '@bulbaswap/sdk-core'
 
 import { Pair } from './pair'
 

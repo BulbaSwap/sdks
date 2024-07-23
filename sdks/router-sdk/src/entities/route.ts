@@ -1,9 +1,9 @@
 // entities/route.ts
 
-import { Route as V2RouteSDK, Pair } from '@ququzone/v2-sdk'
-import { Route as V3RouteSDK, Pool } from '@ququzone/v3-sdk'
+import { Route as V2RouteSDK, Pair } from '@bulbaswap/v2-sdk'
+import { Route as V3RouteSDK, Pool } from '@bulbaswap/v3-sdk'
 import { Protocol } from './protocol'
-import { Currency, Price, Token } from '@ququzone/sdk-core'
+import { Currency, Price, Token } from '@bulbaswap/sdk-core'
 import { MixedRouteSDK } from './mixedRoute/route'
 
 export interface IRoute<TInput extends Currency, TOutput extends Currency, TPool extends Pool | Pair> {
@@ -19,8 +19,7 @@ export interface IRoute<TInput extends Currency, TOutput extends Currency, TPool
 // V2 route wrapper
 export class RouteV2<TInput extends Currency, TOutput extends Currency>
   extends V2RouteSDK<TInput, TOutput>
-  implements IRoute<TInput, TOutput, Pair>
-{
+  implements IRoute<TInput, TOutput, Pair> {
   public readonly protocol: Protocol = Protocol.V2
   public readonly pools: Pair[]
 
@@ -33,8 +32,7 @@ export class RouteV2<TInput extends Currency, TOutput extends Currency>
 // V3 route wrapper
 export class RouteV3<TInput extends Currency, TOutput extends Currency>
   extends V3RouteSDK<TInput, TOutput>
-  implements IRoute<TInput, TOutput, Pool>
-{
+  implements IRoute<TInput, TOutput, Pool> {
   public readonly protocol: Protocol = Protocol.V3
   public readonly path: Token[]
 
@@ -47,8 +45,7 @@ export class RouteV3<TInput extends Currency, TOutput extends Currency>
 // Mixed route wrapper
 export class MixedRoute<TInput extends Currency, TOutput extends Currency>
   extends MixedRouteSDK<TInput, TOutput>
-  implements IRoute<TInput, TOutput, Pool | Pair>
-{
+  implements IRoute<TInput, TOutput, Pool | Pair> {
   public readonly protocol: Protocol = Protocol.MIXED
 
   constructor(mixedRoute: MixedRouteSDK<TInput, TOutput>) {

@@ -1,8 +1,8 @@
-import { Ether, Token, WETH9, CurrencyAmount, Currency } from '@ququzone/sdk-core'
-import { Route as V3RouteSDK, Pool, FeeAmount, TickMath, encodeSqrtRatioX96 } from '@ququzone/v3-sdk'
+import { Ether, Token, WETH9, CurrencyAmount, Currency } from '@bulbaswap/sdk-core'
+import { Route as V3RouteSDK, Pool, FeeAmount, TickMath, encodeSqrtRatioX96 } from '@bulbaswap/v3-sdk'
 import { MixedRoute, RouteV3 } from '../route'
 import { Protocol } from '../protocol'
-import { Route as V2RouteSDK, Pair } from '@ququzone/v2-sdk'
+import { Route as V2RouteSDK, Pair } from '@bulbaswap/v2-sdk'
 import { MixedRouteSDK } from './route'
 import { partitionMixedRouteByProtocol } from '../../utils'
 

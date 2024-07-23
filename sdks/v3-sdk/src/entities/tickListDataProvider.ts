@@ -1,4 +1,4 @@
-import { BigintIsh } from '@ququzone/sdk-core'
+import { BigintIsh } from '@bulbaswap/sdk-core'
 import { TickList } from '../utils/tickList'
 import { Tick, TickConstructorArgs } from './tick'
 import { TickDataProvider } from './tickDataProvider'

@@ -1,7 +1,7 @@
 import JSBI from 'jsbi'
 import { Interface } from '@ethersproject/abi'
 import IPeripheryPaymentsWithFee from '@uniswap/v3-periphery/artifacts/contracts/interfaces/IPeripheryPaymentsWithFee.sol/IPeripheryPaymentsWithFee.json'
-import { Percent, Token, validateAndParseAddress } from '@ququzone/sdk-core'
+import { Percent, Token, validateAndParseAddress } from '@bulbaswap/sdk-core'
 import { toHex } from './utils/calldata'
 
 export interface FeeOptions {

@@ -1,4 +1,4 @@
-import { Price, Token } from '@ququzone/sdk-core'
+import { Price, Token } from '@bulbaswap/sdk-core'
 import { tickToPrice } from './index'
 import { priceToClosestTick } from './priceTickConversions'
 

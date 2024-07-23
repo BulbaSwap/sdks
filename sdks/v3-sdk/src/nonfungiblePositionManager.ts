@@ -6,7 +6,7 @@ import {
   validateAndParseAddress,
   Currency,
   NativeCurrency,
-} from '@ququzone/sdk-core'
+} from '@bulbaswap/sdk-core'
 import JSBI from 'jsbi'
 import invariant from 'tiny-invariant'
 import { Position } from './entities/position'

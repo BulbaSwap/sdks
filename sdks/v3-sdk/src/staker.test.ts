@@ -1,4 +1,4 @@
-import { Token } from '@ququzone/sdk-core'
+import { Token } from '@bulbaswap/sdk-core'
 import { FeeAmount } from './constants'
 import { Pool } from './entities/pool'
 import { Staker } from './staker'

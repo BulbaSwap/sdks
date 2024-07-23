@@ -1,10 +1,10 @@
 {
-  "name": "@ququzone/sdk-core",
-  "version": "1.1.0",
+  "name": "@bulbaswap/sdk-core",
+  "version": "1.0.7",
   "description": "⚒️ An SDK for building applications on top of Uniswap V3",
   "repository": "https://github.com/Uniswap/sdks.git",
   "keywords": [
-    "uniswap",
+    "Bulbaswap",
     "ethereum"
   ],
   "license": "MIT",

@@ -1,7 +1,7 @@
 import { Interface } from '@ethersproject/abi'
-import { Currency, CurrencyAmount, Percent, TradeType, validateAndParseAddress, WETH9 } from '@ququzone/sdk-core'
+import { Currency, CurrencyAmount, Percent, TradeType, validateAndParseAddress, WETH9 } from '@bulbaswap/sdk-core'
 import { abi } from '@uniswap/swap-router-contracts/artifacts/contracts/interfaces/ISwapRouter02.sol/ISwapRouter02.json'
-import { Trade as V2Trade } from '@ququzone/v2-sdk'
+import { Trade as V2Trade } from '@bulbaswap/v2-sdk'
 import {
   encodeRouteToPath,
   FeeOptions,
@@ -13,7 +13,7 @@ import {
   SelfPermit,
   toHex,
   Trade as V3Trade,
-} from '@ququzone/v3-sdk'
+} from '@bulbaswap/v3-sdk'
 import invariant from 'tiny-invariant'
 import JSBI from 'jsbi'
 import { ADDRESS_THIS, MSG_SENDER } from './constants'

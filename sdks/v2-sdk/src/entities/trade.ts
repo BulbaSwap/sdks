@@ -8,7 +8,7 @@ import {
   Price,
   sortedInsert,
   TradeType,
-} from '@ququzone/sdk-core'
+} from '@bulbaswap/sdk-core'
 import { ONE, ZERO } from '../constants'
 import invariant from 'tiny-invariant'
 

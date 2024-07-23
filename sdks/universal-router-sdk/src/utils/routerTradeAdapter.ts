@@ -1,7 +1,7 @@
-import { MixedRouteSDK, Trade as RouterTrade } from '@ququzone/router-sdk'
-import { Currency, CurrencyAmount, Ether, Token, TradeType } from '@ququzone/sdk-core'
-import { Pair, Route as V2Route } from '@ququzone/v2-sdk'
-import { Pool, Route as V3Route, FeeAmount } from '@ququzone/v3-sdk'
+import { MixedRouteSDK, Trade as RouterTrade } from '@bulbaswap/router-sdk'
+import { Currency, CurrencyAmount, Ether, Token, TradeType } from '@bulbaswap/sdk-core'
+import { Pair, Route as V2Route } from '@bulbaswap/v2-sdk'
+import { Pool, Route as V3Route, FeeAmount } from '@bulbaswap/v3-sdk'
 import { BigNumber } from 'ethers'
 import { ETH_ADDRESS, E_ETH_ADDRESS } from './constants'
 

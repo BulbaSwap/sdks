@@ -1,4 +1,4 @@
-import { MaxUint256 } from '@ququzone/sdk-core'
+import { MaxUint256 } from '@bulbaswap/sdk-core'
 import JSBI from 'jsbi'
 import invariant from 'tiny-invariant'
 import { ONE, ZERO, Q96 } from '../internalConstants'

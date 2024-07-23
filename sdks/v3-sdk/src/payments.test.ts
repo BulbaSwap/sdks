@@ -1,4 +1,4 @@
-import { Percent, Token } from '@ququzone/sdk-core'
+import { Percent, Token } from '@bulbaswap/sdk-core'
 import JSBI from 'jsbi'
 import { Payments } from './payments'
 

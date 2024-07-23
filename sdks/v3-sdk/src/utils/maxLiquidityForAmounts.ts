@@ -1,4 +1,4 @@
-import { BigintIsh } from '@ququzone/sdk-core'
+import { BigintIsh } from '@bulbaswap/sdk-core'
 import JSBI from 'jsbi'
 import { Q96 } from '../internalConstants'
 
