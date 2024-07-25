@@ -7,6 +7,8 @@ export function permit2Address(chainId?: number): string {
   switch (chainId) {
     case 324:
       return '0x0000000000225e31D15943971F47aD3022F714Fa'
+    case 2810:
+      return '0x9a5450d9c71fa9d6bF8Df25e49313D7C3C42de60'
     default:
       return PERMIT2_ADDRESS
   }
