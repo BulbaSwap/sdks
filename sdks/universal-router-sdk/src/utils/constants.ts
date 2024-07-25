@@ -114,6 +114,11 @@ const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     weth: '0x5aea5775959fbc2557cc8789bc1bf90a239d9a91',
     creationBlock: 12640979,
   },
+  [2810]: {
+    router: '0x772B742F3d54EBEd3F97Aa66496c2Aaf09E6F1c9',
+    weth: '0x5300000000000000000000000000000000000011',
+    creationBlock: 4665600,
+  }
 }
 
 export const UNIVERSAL_ROUTER_ADDRESS = (chainId: number): string => {
@@ -134,7 +139,7 @@ export const WETH_ADDRESS = (chainId: number): string => {
   return CHAIN_CONFIGS[chainId].weth
 }
 
-export const PERMIT2_ADDRESS = '0x000000000022D473030F116dDEE9F6B43aC78BA3'
+export const PERMIT2_ADDRESS = '0x9a5450d9c71fa9d6bF8Df25e49313D7C3C42de60'
 
 export const CONTRACT_BALANCE = BigNumber.from(2).pow(255)
 export const ETH_ADDRESS = '0x0000000000000000000000000000000000000000'
