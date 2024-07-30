@@ -1,12 +1,12 @@
 const fs = require('fs')
 const { AllowanceTransfer, SignatureTransfer } = require('./dist')
 
-const PERMIT2_ADDRESS = '0xf0ffb02791362602acf0edce574e74dd9bd3120e'
+const PERMIT2_ADDRESS = '0x9a5450d9c71fa9d6bF8Df25e49313D7C3C42de60'
 const TOKEN_ADDRESS = '0xb9728f6DE23E1Beeb7Bab38cbf0e60C0A48136eC'
 const SPENDER_ADDRESS = '0x0000000000000000000000000000000000000001'
 const EXPIRATION = '10000000000000'
 const AMOUNT = '1000000000000000000'
-const chainId = 31337
+const chainId = 2810
 
 const interop = {
   _PERMIT_HASH: AllowanceTransfer.hash(
