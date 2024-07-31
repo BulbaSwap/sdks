@@ -1661,6 +1661,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@bulbaswap/permit2-sdk@workspace:sdks/permit2-sdk":
+  version: 0.0.0-use.local
+  resolution: "@bulbaswap/permit2-sdk@workspace:sdks/permit2-sdk"
+  dependencies:
+    "@types/jest": ^24.0.25
+    ethers: ^5.7.0
+    prettier: ^2.4.1
+    tiny-invariant: ^1.1.0
+    tsdx: ^0.14.1
+  languageName: unknown
+  linkType: soft
+
 "@bulbaswap/router-sdk@npm:^1.0.2":
   version: 1.0.2
   resolution: "@bulbaswap/router-sdk@npm:1.0.2"
@@ -4634,18 +4646,6 @@ __metadata:
   checksum: 828a63c52673a5b4eefa769c0ecc2da667fe5573a3c447d0fea3809b46e7a71376a48917d959f253abba01e9faa442a503dd65649687a6bf7b385ee9f6d41afd
   languageName: node
   linkType: hard
-
-"@uniswap/permit2-sdk@workspace:sdks/permit2-sdk":
-  version: 0.0.0-use.local
-  resolution: "@uniswap/permit2-sdk@workspace:sdks/permit2-sdk"
-  dependencies:
-    "@types/jest": ^24.0.25
-    ethers: ^5.7.0
-    prettier: ^2.4.1
-    tiny-invariant: ^1.1.0
-    tsdx: ^0.14.1
-  languageName: unknown
-  linkType: soft
 
 "@uniswap/sdk-core@npm:^5.0.0":
   version: 5.3.1

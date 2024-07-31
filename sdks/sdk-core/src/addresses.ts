@@ -13,7 +13,7 @@ type ChainAddresses = {
   mixedRouteQuoterV1Address?: string
 }
 
-const DEFAULT_NETWORKS = [ChainId.MAINNET, ChainId.GOERLI, ChainId.SEPOLIA]
+const DEFAULT_NETWORKS = [ChainId.MAINNET, ChainId.GOERLI, ChainId.SEPOLIA, ChainId.HOLESKY]
 
 function constructSameAddressMap(address: string, additionalNetworks: ChainId[] = []): AddressMap {
   return DEFAULT_NETWORKS.concat(additionalNetworks).reduce<AddressMap>((memo, chainId) => {
@@ -28,6 +28,7 @@ export const UNI_ADDRESSES: AddressMap = constructSameAddressMap('0x1f9840a85d5a
   ChainId.POLYGON,
   ChainId.POLYGON_MUMBAI,
   ChainId.SEPOLIA,
+  ChainId.HOLESKY
 ])
 
 export const UNISWAP_NFT_AIRDROP_CLAIM_ADDRESS = '0x8B799381ac40b838BBA4131ffB26197C432AFe78'
@@ -53,7 +54,7 @@ export const V2_FACTORY_ADDRESSES: AddressMap = {
 /**
  * @deprecated use V2_ROUTER_ADDRESSES instead
  */
-export const V2_ROUTER_ADDRESS = '0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D'
+export const V2_ROUTER_ADDRESS = '0x07968156ADF895922406523887E5C157623c38Db'
 export const V2_ROUTER_ADDRESSES: AddressMap = {
   [ChainId.MAINNET]: '0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D',
   [ChainId.GOERLI]: '0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D',
@@ -69,11 +70,13 @@ export const V2_ROUTER_ADDRESSES: AddressMap = {
 
 // Networks that share most of the same addresses i.e. Mainnet, Goerli, Optimism, Arbitrum, Polygon
 const DEFAULT_ADDRESSES: ChainAddresses = {
-  v3CoreFactoryAddress: '0x1F98431c8aD98523631AE4a59f267346ea31F984',
-  multicallAddress: '0x1F98415757620B543A52E61c46B32eB19261F984',
-  quoterAddress: '0xb27308f9F90D607463bb33eA1BeBb41C27CE5AB6',
-  v3MigratorAddress: '0xA5644E29708357803b5A882D272c41cC0dF92B34',
-  nonfungiblePositionManagerAddress: '0xC36442b4a4522E871399CD717aBDD847Ab11FE88',
+  v3CoreFactoryAddress: '0xe5DE50EdC20750eFfE8833bF3Bf5d72892b7AD54',
+  multicallAddress: '0x8595bCB8cE1caEAc2586c9BA9D9abc44bF3fA02c',
+  quoterAddress: '0x39471D2D3A8645E49800d693b7fC683156880Afd',
+  v3MigratorAddress: '0xb88a7307bb959A89c1c92B7afeeE9d793000FB9C',
+  nonfungiblePositionManagerAddress: '0x1De430dbD59783390dab0BDDfACA23A0E1B23c67',
+  tickLensAddress: '0xe9f94C9De30398dB505bE2352673d5DF6e955bD6',
+  swapRouter02Address: '0xb6D444818DCFeC2c857060F63AD673a880a46322'
 }
 const MAINNET_ADDRESSES: ChainAddresses = {
   ...DEFAULT_ADDRESSES,
