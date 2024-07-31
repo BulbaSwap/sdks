@@ -13,7 +13,7 @@ type ChainAddresses = {
   mixedRouteQuoterV1Address?: string
 }
 
-const DEFAULT_NETWORKS = [ChainId.MAINNET, ChainId.GOERLI, ChainId.SEPOLIA, ChainId.HOLESKY]
+const DEFAULT_NETWORKS = [ChainId.MAINNET, ChainId.GOERLI, ChainId.SEPOLIA]
 
 function constructSameAddressMap(address: string, additionalNetworks: ChainId[] = []): AddressMap {
   return DEFAULT_NETWORKS.concat(additionalNetworks).reduce<AddressMap>((memo, chainId) => {
@@ -27,8 +27,7 @@ export const UNI_ADDRESSES: AddressMap = constructSameAddressMap('0x1f9840a85d5a
   ChainId.ARBITRUM_ONE,
   ChainId.POLYGON,
   ChainId.POLYGON_MUMBAI,
-  ChainId.SEPOLIA,
-  ChainId.HOLESKY
+  ChainId.SEPOLIA
 ])
 
 export const UNISWAP_NFT_AIRDROP_CLAIM_ADDRESS = '0x8B799381ac40b838BBA4131ffB26197C432AFe78'
