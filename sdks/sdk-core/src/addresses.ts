@@ -48,7 +48,7 @@ export const V2_FACTORY_ADDRESSES: AddressMap = {
   [ChainId.POLYGON]: '0x9e5A52f57b3038F1B8EeE45F28b3C1967e22799C',
   [ChainId.CELO]: '0x79a530c8e2fA8748B7B40dd3629C0520c2cCf03f',
   [ChainId.BLAST]: '0x5C346464d33F90bABaf70dB6388507CC889C1070',
-  [ChainId.HOLESKY]: '0x7A8aa7cDdB2846CDb3cC792FD47848e28AeEfdB2',
+  [ChainId.HOLESKY]: '0x593E80859079f38D4c19459f1E4f55A44a86bCcC',
 }
 /**
  * @deprecated use V2_ROUTER_ADDRESSES instead
@@ -64,7 +64,7 @@ export const V2_ROUTER_ADDRESSES: AddressMap = {
   [ChainId.BNB]: '0x4752ba5dbc23f44d87826276bf6fd6b1c372ad24',
   [ChainId.POLYGON]: '0xedf6066a2b290c185783862c7f4776a2c8077ad1',
   [ChainId.BLAST]: '0xBB66Eb1c5e875933D44DAe661dbD80e5D9B03035',
-  [ChainId.HOLESKY]: '0x07968156ADF895922406523887E5C157623c38Db',
+  [ChainId.HOLESKY]: '0x43FF8c5dD3DDB35B8A3176c92836AaCe4736eC3C',
 }
 
 // Networks that share most of the same addresses i.e. Mainnet, Goerli, Optimism, Arbitrum, Polygon
@@ -257,7 +257,7 @@ const HOLESKY_ADDRESSES: ChainAddresses = {
   v3MigratorAddress: '0xb88a7307bb959A89c1c92B7afeeE9d793000FB9C',
   nonfungiblePositionManagerAddress: '0x1De430dbD59783390dab0BDDfACA23A0E1B23c67',
   tickLensAddress: '0xe9f94C9De30398dB505bE2352673d5DF6e955bD6',
-  swapRouter02Address: '0xb6D444818DCFeC2c857060F63AD673a880a46322'
+  swapRouter02Address: '0x6824D42A7e67e237EC4c8184E5ce3e9A240c1b8B'
 }
 
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
