@@ -1729,6 +1729,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@bulbaswap/sdk-core@npm:^1.0.13":
+  version: 1.0.13
+  resolution: "@bulbaswap/sdk-core@npm:1.0.13"
+  dependencies:
+    "@ethersproject/address": ^5.0.2
+    "@ethersproject/bignumber": ^5.7.0
+    "@ethersproject/bytes": ^5.7.0
+    "@ethersproject/keccak256": 5.7.0
+    "@ethersproject/strings": 5.7.0
+    big.js: ^5.2.2
+    decimal.js-light: ^2.5.0
+    jsbi: ^3.1.4
+    tiny-invariant: ^1.1.0
+    toformat: ^2.0.0
+  checksum: 17f806d4f23dfd6c4bbb12162440a9f18b66a0e62f69508c2a995c2f7d852625ff890c90bdbde1aa3aa7ec64d20d24b809d19e99f41bc33194f18f6b48d739c2
+  languageName: node
+  linkType: hard
+
 "@bulbaswap/sdk-core@workspace:sdks/sdk-core":
   version: 0.0.0-use.local
   resolution: "@bulbaswap/sdk-core@workspace:sdks/sdk-core"
@@ -1755,7 +1773,7 @@ __metadata:
   dependencies:
     "@bulbaswap/permit2-sdk": ^1.0.8
     "@bulbaswap/router-sdk": ^1.0.9
-    "@bulbaswap/sdk-core": ^1.0.12
+    "@bulbaswap/sdk-core": ^1.0.13
     "@bulbaswap/v2-sdk": ^1.0.10
     "@bulbaswap/v3-sdk": ^1.0.10
     "@types/chai": ^4.3.3
