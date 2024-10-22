@@ -27,7 +27,7 @@ export const UNI_ADDRESSES: AddressMap = constructSameAddressMap('0x1f9840a85d5a
   ChainId.ARBITRUM_ONE,
   ChainId.POLYGON,
   ChainId.POLYGON_MUMBAI,
-  ChainId.SEPOLIA
+  ChainId.SEPOLIA,
 ])
 
 export const UNISWAP_NFT_AIRDROP_CLAIM_ADDRESS = '0x8B799381ac40b838BBA4131ffB26197C432AFe78'
@@ -75,7 +75,7 @@ const DEFAULT_ADDRESSES: ChainAddresses = {
   v3MigratorAddress: '0xb88a7307bb959A89c1c92B7afeeE9d793000FB9C',
   nonfungiblePositionManagerAddress: '0x1De430dbD59783390dab0BDDfACA23A0E1B23c67',
   tickLensAddress: '0xe9f94C9De30398dB505bE2352673d5DF6e955bD6',
-  swapRouter02Address: '0xb6D444818DCFeC2c857060F63AD673a880a46322'
+  swapRouter02Address: '0xb6D444818DCFeC2c857060F63AD673a880a46322',
 }
 const MAINNET_ADDRESSES: ChainAddresses = {
   ...DEFAULT_ADDRESSES,
@@ -257,7 +257,17 @@ const HOLESKY_ADDRESSES: ChainAddresses = {
   v3MigratorAddress: '0xb88a7307bb959A89c1c92B7afeeE9d793000FB9C',
   nonfungiblePositionManagerAddress: '0x1De430dbD59783390dab0BDDfACA23A0E1B23c67',
   tickLensAddress: '0xe9f94C9De30398dB505bE2352673d5DF6e955bD6',
-  swapRouter02Address: '0x6824D42A7e67e237EC4c8184E5ce3e9A240c1b8B'
+  swapRouter02Address: '0x6824D42A7e67e237EC4c8184E5ce3e9A240c1b8B',
+}
+
+const MORPH_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '',
+  multicallAddress: '',
+  quoterAddress: '',
+  v3MigratorAddress: '',
+  nonfungiblePositionManagerAddress: '',
+  tickLensAddress: '',
+  swapRouter02Address: '',
 }
 
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
@@ -284,6 +294,7 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.BLAST]: BLAST_ADDRESSES,
   [ChainId.ZKSYNC]: ZKSYNC_ADDRESSES,
   [ChainId.HOLESKY]: HOLESKY_ADDRESSES,
+  [ChainId.MORPH]: MORPH_ADDRESSES,
 }
 
 /* V3 Contract Addresses */
