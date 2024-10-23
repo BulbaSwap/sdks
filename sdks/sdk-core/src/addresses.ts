@@ -49,6 +49,7 @@ export const V2_FACTORY_ADDRESSES: AddressMap = {
   [ChainId.CELO]: '0x79a530c8e2fA8748B7B40dd3629C0520c2cCf03f',
   [ChainId.BLAST]: '0x5C346464d33F90bABaf70dB6388507CC889C1070',
   [ChainId.HOLESKY]: '0x593E80859079f38D4c19459f1E4f55A44a86bCcC',
+  [ChainId.MORPH]: '0x8D2A8b8F7d200d75Bf5F9E84e01F9272f90EFB8b',
 }
 /**
  * @deprecated use V2_ROUTER_ADDRESSES instead
@@ -65,17 +66,18 @@ export const V2_ROUTER_ADDRESSES: AddressMap = {
   [ChainId.POLYGON]: '0xedf6066a2b290c185783862c7f4776a2c8077ad1',
   [ChainId.BLAST]: '0xBB66Eb1c5e875933D44DAe661dbD80e5D9B03035',
   [ChainId.HOLESKY]: '0xe5F3A668cD48ADd7AEae6D9E75Aa3b919D32357F',
+  [ChainId.MORPH]: '0x81606E6f8aAD6C75c2f383Ea595c2b9f8ce8aE3a',
 }
 
 // Networks that share most of the same addresses i.e. Mainnet, Goerli, Optimism, Arbitrum, Polygon
 const DEFAULT_ADDRESSES: ChainAddresses = {
-  v3CoreFactoryAddress: '0xe5DE50EdC20750eFfE8833bF3Bf5d72892b7AD54',
-  multicallAddress: '0x8595bCB8cE1caEAc2586c9BA9D9abc44bF3fA02c',
-  quoterAddress: '0x39471D2D3A8645E49800d693b7fC683156880Afd',
-  v3MigratorAddress: '0xb88a7307bb959A89c1c92B7afeeE9d793000FB9C',
-  nonfungiblePositionManagerAddress: '0x1De430dbD59783390dab0BDDfACA23A0E1B23c67',
-  tickLensAddress: '0xe9f94C9De30398dB505bE2352673d5DF6e955bD6',
-  swapRouter02Address: '0xb6D444818DCFeC2c857060F63AD673a880a46322',
+  v3CoreFactoryAddress: '0xFf8578C2949148A6F19b7958aE86CAAb2779CDDD',
+  multicallAddress: '0xAcD82113982479B25E7c1D09858F0130921Dbbca',
+  quoterAddress: '0xc312e6417D07Ae7Ba73FeF0832B1811194A7BbEf',
+  v3MigratorAddress: '0xe87c01ca304d69a94c4E079275B276BE659EE5eF',
+  nonfungiblePositionManagerAddress: '0xC6B60EE77854b7c11c39b6E3f5BCfe1866cbC20A',
+  tickLensAddress: '0xA8da1415a3310d4b3759a683839947e6F8223ee2',
+  swapRouter02Address: '0xa7304d322219553d4A85c9cE8eB7462Dcaf6453C',
 }
 const MAINNET_ADDRESSES: ChainAddresses = {
   ...DEFAULT_ADDRESSES,
@@ -261,13 +263,13 @@ const HOLESKY_ADDRESSES: ChainAddresses = {
 }
 
 const MORPH_ADDRESSES: ChainAddresses = {
-  v3CoreFactoryAddress: '',
-  multicallAddress: '',
-  quoterAddress: '',
-  v3MigratorAddress: '',
-  nonfungiblePositionManagerAddress: '',
-  tickLensAddress: '',
-  swapRouter02Address: '',
+  v3CoreFactoryAddress: '0xFf8578C2949148A6F19b7958aE86CAAb2779CDDD',
+  multicallAddress: '0xAcD82113982479B25E7c1D09858F0130921Dbbca',
+  quoterAddress: '0xc312e6417D07Ae7Ba73FeF0832B1811194A7BbEf',
+  v3MigratorAddress: '0xe87c01ca304d69a94c4E079275B276BE659EE5eF',
+  nonfungiblePositionManagerAddress: '0xC6B60EE77854b7c11c39b6E3f5BCfe1866cbC20A',
+  tickLensAddress: '0xA8da1415a3310d4b3759a683839947e6F8223ee2',
+  swapRouter02Address: '0xa7304d322219553d4A85c9cE8eB7462Dcaf6453C',
 }
 
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
