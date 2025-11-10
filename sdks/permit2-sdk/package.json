@@ -1,6 +1,6 @@
 {
   "name": "@bulbaswap/permit2-sdk",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "An sdk for interacting with permit2.",
   "repository": "https://github.com/BulbaSwap/sdks.git",
   "keywords": [

@@ -11,6 +11,8 @@ export function permit2Address(chainId?: number): string {
       return '0x9a5450d9c71fa9d6bF8Df25e49313D7C3C42de60'
     case 2818:
       return '0x90a8a8E2Abb67d300593C714b687De109B4bCE5e'
+    case 2910:
+      return '0xc3065F76f0890B75AD2d7E7B631D71d8EA4466Ce'
     default:
       return PERMIT2_ADDRESS
   }
