@@ -1683,16 +1683,16 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bulbaswap/router-sdk@npm:^2.0.4":
-  version: 2.0.4
-  resolution: "@bulbaswap/router-sdk@npm:2.0.4"
+"@bulbaswap/router-sdk@npm:^2.0.5":
+  version: 2.0.5
+  resolution: "@bulbaswap/router-sdk@npm:2.0.5"
   dependencies:
     "@bulbaswap/sdk-core": ^2.0.3
-    "@bulbaswap/v2-sdk": ^2.0.4
+    "@bulbaswap/v2-sdk": ^2.0.5
     "@bulbaswap/v3-sdk": ^2.0.4
     "@ethersproject/abi": ^5.5.0
     "@uniswap/swap-router-contracts": ^1.3.0
-  checksum: 3dcf406c7837cab2ae9f7e4e5835e18bac710cb45ce59a3e6e05a0d5d4cad1a67cf217d0c0528aeec9208a5938f369ccfd54aade5f3e2dc01639caf5211f8173
+  checksum: f905387797dd29bab0a12639203aa831fe9a19b89721ef9d2a3700cd6c0347c688137a8673ae7542d76ca5ddbabde749f62c5372e0c5c574aa62eae5610c3b33
   languageName: node
   linkType: hard
 
@@ -1701,7 +1701,7 @@ __metadata:
   resolution: "@bulbaswap/router-sdk@workspace:sdks/router-sdk"
   dependencies:
     "@bulbaswap/sdk-core": ^2.0.3
-    "@bulbaswap/v2-sdk": ^2.0.4
+    "@bulbaswap/v2-sdk": ^2.0.5
     "@bulbaswap/v3-sdk": ^2.0.4
     "@ethersproject/abi": ^5.5.0
     "@types/jest": ^24.0.25
@@ -1754,9 +1754,9 @@ __metadata:
   resolution: "@bulbaswap/universal-router-sdk@workspace:sdks/universal-router-sdk"
   dependencies:
     "@bulbaswap/permit2-sdk": ^2.0.2
-    "@bulbaswap/router-sdk": ^2.0.4
+    "@bulbaswap/router-sdk": ^2.0.5
     "@bulbaswap/sdk-core": ^2.0.3
-    "@bulbaswap/v2-sdk": ^2.0.4
+    "@bulbaswap/v2-sdk": ^2.0.5
     "@bulbaswap/v3-sdk": ^2.0.4
     "@types/chai": ^4.3.3
     "@types/mocha": ^9.1.1
@@ -1778,9 +1778,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bulbaswap/v2-sdk@npm:^2.0.4":
-  version: 2.0.4
-  resolution: "@bulbaswap/v2-sdk@npm:2.0.4"
+"@bulbaswap/v2-sdk@npm:^2.0.5":
+  version: 2.0.5
+  resolution: "@bulbaswap/v2-sdk@npm:2.0.5"
   dependencies:
     "@bulbaswap/sdk-core": ^2.0.3
     "@ethersproject/address": ^5.0.2
@@ -1788,7 +1788,7 @@ __metadata:
     "@ethersproject/solidity": ^5.0.9
     tiny-invariant: ^1.1.0
     tiny-warning: ^1.0.3
-  checksum: 60210bb5644822cd0864e274487975d4f6a35ee49bfde8482ba031e8424ca4e99c477e8d63e84cfceb29e7875626779228fcedac79363faa068eef196a046907
+  checksum: 0493294b82f9291c30f5b251e65761948ec515dfcfe854d0383182d7a72b001a4cd13b80904cd6a28a87d8097841ee9dec078df30ec28b0965328461a5f1cf0c
   languageName: node
   linkType: hard
 

@@ -1,6 +1,6 @@
 {
   "name": "@bulbaswap/universal-router-sdk",
-  "version": "2.0.8",
+  "version": "2.0.9",
   "description": "sdk for integrating with the Universal Router contracts",
   "repository": "https://github.com/BulbaSwap/sdks.git",
   "keywords": [
@@ -32,9 +32,9 @@
   },
   "dependencies": {
     "@bulbaswap/permit2-sdk": "^2.0.2",
-    "@bulbaswap/router-sdk": "^2.0.4",
+    "@bulbaswap/router-sdk": "^2.0.5",
     "@bulbaswap/sdk-core": "^2.0.3",
-    "@bulbaswap/v2-sdk": "^2.0.4",
+    "@bulbaswap/v2-sdk": "^2.0.5",
     "@bulbaswap/v3-sdk": "^2.0.4",
     "@uniswap/universal-router": "1.6.0",
     "bignumber.js": "^9.0.2",

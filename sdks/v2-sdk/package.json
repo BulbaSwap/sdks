@@ -1,6 +1,6 @@
 {
   "name": "@bulbaswap/v2-sdk",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "🛠 An SDK for building applications on top of Bulbaswap V2",
   "repository": "https://github.com/BulbaSwap/sdks.git",
   "keywords": [
