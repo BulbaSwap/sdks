@@ -1661,13 +1661,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@bulbaswap/permit2-sdk@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "@bulbaswap/permit2-sdk@npm:2.0.1"
+"@bulbaswap/permit2-sdk@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "@bulbaswap/permit2-sdk@npm:2.0.2"
   dependencies:
     ethers: ^5.7.0
     tiny-invariant: ^1.1.0
-  checksum: 0ca5e0dcf5f86bc8854c2d058cc75d28f71b52b0e4ef3c731acbb1b710ecd50d07674b6558cc41afce3bf90f019c2c765f1103dc316f1d1a4746b3c6abb1e6c1
+  checksum: 2576b72aa9f86eabc18a09e372643f363d212490f2a1d69bf3fb22fab4a9bf2621761b2d267a5ef1b2247f3793aa9b614543d0515e2f38011349ac4d04edec75
   languageName: node
   linkType: hard
 
@@ -1729,6 +1729,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@bulbaswap/sdk-core@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "@bulbaswap/sdk-core@npm:2.0.2"
+  dependencies:
+    "@ethersproject/address": ^5.0.2
+    "@ethersproject/bignumber": ^5.7.0
+    "@ethersproject/bytes": ^5.7.0
+    "@ethersproject/keccak256": 5.7.0
+    "@ethersproject/strings": 5.7.0
+    big.js: ^5.2.2
+    decimal.js-light: ^2.5.0
+    jsbi: ^3.1.4
+    tiny-invariant: ^1.1.0
+    toformat: ^2.0.0
+  checksum: 9badb120579fc121e4b4293b2ab81c3328d4eacfd4f607231dd4b57a125945dcf58a1242c1060ae7dae1450ce677f80def3b7888aea6870c01855a4efb5cebf1
+  languageName: node
+  linkType: hard
+
 "@bulbaswap/sdk-core@workspace:sdks/sdk-core":
   version: 0.0.0-use.local
   resolution: "@bulbaswap/sdk-core@workspace:sdks/sdk-core"
@@ -1753,9 +1771,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@bulbaswap/universal-router-sdk@workspace:sdks/universal-router-sdk"
   dependencies:
-    "@bulbaswap/permit2-sdk": ^2.0.1
+    "@bulbaswap/permit2-sdk": ^2.0.2
     "@bulbaswap/router-sdk": ^2.0.1
-    "@bulbaswap/sdk-core": ^2.0.1
+    "@bulbaswap/sdk-core": ^2.0.2
     "@bulbaswap/v2-sdk": ^2.0.1
     "@bulbaswap/v3-sdk": ^2.0.1
     "@types/chai": ^4.3.3
