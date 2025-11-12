@@ -50,7 +50,7 @@ export const V2_FACTORY_ADDRESSES: AddressMap = {
   [ChainId.BLAST]: '0x5C346464d33F90bABaf70dB6388507CC889C1070',
   [ChainId.HOLESKY]: '0x593E80859079f38D4c19459f1E4f55A44a86bCcC',
   [ChainId.MORPH]: '0x8D2A8b8F7d200d75Bf5F9E84e01F9272f90EFB8b',
-  [ChainId.HOODI]: '0x69DDBb82dE62bFe3B593266396b46B3AE422169d',
+  [ChainId.HOODI]: '0xbD3A2aABA47f3cb1359bAb25EFE90fB5f8837506',
 }
 /**
  * @deprecated use V2_ROUTER_ADDRESSES instead
@@ -68,7 +68,7 @@ export const V2_ROUTER_ADDRESSES: AddressMap = {
   [ChainId.BLAST]: '0xBB66Eb1c5e875933D44DAe661dbD80e5D9B03035',
   [ChainId.HOLESKY]: '0xe5F3A668cD48ADd7AEae6D9E75Aa3b919D32357F',
   [ChainId.MORPH]: '0x81606E6f8aAD6C75c2f383Ea595c2b9f8ce8aE3a',
-  [ChainId.HOODI]: '0xf70a5a4200c156b5a9Ced64980D7b85398000f1E',
+  [ChainId.HOODI]: '0x0Fbc1878d0a8BE4f071dF201C8b53d0A7db0C671',
 }
 
 // Networks that share most of the same addresses i.e. Mainnet, Goerli, Optimism, Arbitrum, Polygon

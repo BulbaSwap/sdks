@@ -10,7 +10,15 @@ export const FACTORY_ADDRESS_MAP: { [chainId: number]: string } = V2_FACTORY_ADD
 
 //export const INIT_CODE_HASH = '0x96e8ac4277198ff8b6f785478aa9a39f403cb768dd02cbee326c3e7da348845f'
 
+/**
+ * @deprecated use INIT_CODE_HASH_MAP instead
+ */
 export const INIT_CODE_HASH = '0xe0d4c9aa46e27dc0f29e1fbc328dadb3455bbfc8dd936b2ea1abd5d028cc2813'
+
+export const INIT_CODE_HASH_MAP: { [chainId: number]: string } = {
+  2818: '0xe0d4c9aa46e27dc0f29e1fbc328dadb3455bbfc8dd936b2ea1abd5d028cc2813',
+  2910: '0x0472ad46dfde1c6b9ff93ad1668a75cbad773ac1a3f91e82cba7069e8175b487',
+}
 
 export const MINIMUM_LIQUIDITY = JSBI.BigInt(1000)
 
