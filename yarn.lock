@@ -1683,16 +1683,16 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bulbaswap/router-sdk@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "@bulbaswap/router-sdk@npm:2.0.1"
+"@bulbaswap/router-sdk@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "@bulbaswap/router-sdk@npm:2.0.2"
   dependencies:
-    "@bulbaswap/sdk-core": ^2.0.1
-    "@bulbaswap/v2-sdk": ^2.0.1
-    "@bulbaswap/v3-sdk": ^2.0.1
+    "@bulbaswap/sdk-core": ^2.0.2
+    "@bulbaswap/v2-sdk": ^2.0.2
+    "@bulbaswap/v3-sdk": ^2.0.2
     "@ethersproject/abi": ^5.5.0
     "@uniswap/swap-router-contracts": ^1.3.0
-  checksum: f7486446fa5fdfa9419c941592d24487c495ad922ac537eaa448a18323455adc109c3481d5b898e6ea6b406e59fe100e48aa548b5687ac52963533e118fba569
+  checksum: 432db9c1f56cfb1fa2166e684b0fd09e66de124cac597406336fb16e4734aa4b130bdc1129a285b8216dda87d75f399457d23b43cfcfbcc3e27533e9a162c7f3
   languageName: node
   linkType: hard
 
@@ -1700,9 +1700,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@bulbaswap/router-sdk@workspace:sdks/router-sdk"
   dependencies:
-    "@bulbaswap/sdk-core": ^2.0.1
-    "@bulbaswap/v2-sdk": ^2.0.1
-    "@bulbaswap/v3-sdk": ^2.0.1
+    "@bulbaswap/sdk-core": ^2.0.2
+    "@bulbaswap/v2-sdk": ^2.0.2
+    "@bulbaswap/v3-sdk": ^2.0.2
     "@ethersproject/abi": ^5.5.0
     "@types/jest": ^24.0.25
     "@uniswap/swap-router-contracts": ^1.3.0
@@ -1710,24 +1710,6 @@ __metadata:
     tsdx: ^0.14.1
   languageName: unknown
   linkType: soft
-
-"@bulbaswap/sdk-core@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "@bulbaswap/sdk-core@npm:2.0.1"
-  dependencies:
-    "@ethersproject/address": ^5.0.2
-    "@ethersproject/bignumber": ^5.7.0
-    "@ethersproject/bytes": ^5.7.0
-    "@ethersproject/keccak256": 5.7.0
-    "@ethersproject/strings": 5.7.0
-    big.js: ^5.2.2
-    decimal.js-light: ^2.5.0
-    jsbi: ^3.1.4
-    tiny-invariant: ^1.1.0
-    toformat: ^2.0.0
-  checksum: 172850edd3752e25b44b35b9f627b83963b3f4c8c58e0bff3851bcd552f3aadd38a8f8a2afb1c9d651ed2349589b1195bbe745fb06140d5f20fec27bdc50f9d8
-  languageName: node
-  linkType: hard
 
 "@bulbaswap/sdk-core@npm:^2.0.2":
   version: 2.0.2
@@ -1772,10 +1754,10 @@ __metadata:
   resolution: "@bulbaswap/universal-router-sdk@workspace:sdks/universal-router-sdk"
   dependencies:
     "@bulbaswap/permit2-sdk": ^2.0.2
-    "@bulbaswap/router-sdk": ^2.0.1
+    "@bulbaswap/router-sdk": ^2.0.2
     "@bulbaswap/sdk-core": ^2.0.2
-    "@bulbaswap/v2-sdk": ^2.0.1
-    "@bulbaswap/v3-sdk": ^2.0.1
+    "@bulbaswap/v2-sdk": ^2.0.2
+    "@bulbaswap/v3-sdk": ^2.0.2
     "@types/chai": ^4.3.3
     "@types/mocha": ^9.1.1
     "@types/node": ^18.7.16
@@ -1796,17 +1778,17 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bulbaswap/v2-sdk@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "@bulbaswap/v2-sdk@npm:2.0.1"
+"@bulbaswap/v2-sdk@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "@bulbaswap/v2-sdk@npm:2.0.2"
   dependencies:
-    "@bulbaswap/sdk-core": ^2.0.1
+    "@bulbaswap/sdk-core": ^2.0.2
     "@ethersproject/address": ^5.0.2
     "@ethersproject/bignumber": ^5.7.0
     "@ethersproject/solidity": ^5.0.9
     tiny-invariant: ^1.1.0
     tiny-warning: ^1.0.3
-  checksum: 4c1c42495cdeb152d5178c2738024fad74850152eb2e961b0491db32352f2f736946ae8c59adb4c6eca8bba81d57294e775d0bd832950a64e94bd4a614660578
+  checksum: 7c0adf73a6dae0358730db892130e0fe9c48a81aa796a41da5a25cac501e6f52b3f70098769f40eb8d8e17ea938d33b099b63b30448986a9577c10737d9f2201
   languageName: node
   linkType: hard
 
@@ -1814,7 +1796,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@bulbaswap/v2-sdk@workspace:sdks/v2-sdk"
   dependencies:
-    "@bulbaswap/sdk-core": ^2.0.1
+    "@bulbaswap/sdk-core": ^2.0.2
     "@ethersproject/address": ^5.0.2
     "@ethersproject/bignumber": ^5.7.0
     "@ethersproject/solidity": ^5.0.9
@@ -1828,11 +1810,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bulbaswap/v3-sdk@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "@bulbaswap/v3-sdk@npm:2.0.1"
+"@bulbaswap/v3-sdk@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "@bulbaswap/v3-sdk@npm:2.0.2"
   dependencies:
-    "@bulbaswap/sdk-core": ^2.0.1
+    "@bulbaswap/sdk-core": ^2.0.2
     "@ethersproject/abi": ^5.5.0
     "@ethersproject/solidity": ^5.0.9
     "@uniswap/swap-router-contracts": ^1.3.0
@@ -1840,7 +1822,7 @@ __metadata:
     "@uniswap/v3-staker": 1.0.0
     tiny-invariant: ^1.1.0
     tiny-warning: ^1.0.3
-  checksum: b0414c80ed58db9bfa2e4a296e5e86d016e6a3354110499d03ec7f2e1da7f9159f40467917df8d22f817942ddd108b95ea231fefdee0de1432a013fc13d25d24
+  checksum: 112d4bc3a58ada443a2d4bf18f216730add9636441faedc53649190eee581b62a45f8ba9bab99cb188cfb971027673e0d0115eab0df9254d0b62cfac8afd4c9a
   languageName: node
   linkType: hard
 
@@ -1848,7 +1830,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@bulbaswap/v3-sdk@workspace:sdks/v3-sdk"
   dependencies:
-    "@bulbaswap/sdk-core": ^2.0.1
+    "@bulbaswap/sdk-core": ^2.0.2
     "@ethersproject/abi": ^5.5.0
     "@ethersproject/solidity": ^5.0.9
     "@types/jest": ^24.0.25
