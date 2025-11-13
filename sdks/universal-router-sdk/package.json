@@ -1,6 +1,6 @@
 {
   "name": "@bulbaswap/universal-router-sdk",
-  "version": "2.0.9",
+  "version": "2.0.10",
   "description": "sdk for integrating with the Universal Router contracts",
   "repository": "https://github.com/BulbaSwap/sdks.git",
   "keywords": [
@@ -20,7 +20,6 @@
     "build": "tsdx build",
     "docs": "typedoc",
     "forge:fix": "forge fmt",
-    "install:ur": "cd node_modules/@uniswap/universal-router && forge install",
     "lint": "yarn prettier",
     "lint:fix": "yarn prettier:fix && yarn forge:fix",
     "prettier": "prettier --check '**/*.ts' && prettier --check '**/*.json'",
@@ -36,7 +35,6 @@
     "@bulbaswap/sdk-core": "^2.0.3",
     "@bulbaswap/v2-sdk": "^2.0.5",
     "@bulbaswap/v3-sdk": "^2.0.4",
-    "@uniswap/universal-router": "1.6.0",
     "bignumber.js": "^9.0.2",
     "ethers": "^5.7.0"
   },
